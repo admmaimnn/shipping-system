@@ -15,7 +15,7 @@
         <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/css/calendar.css', 'resources/js/app.js', 'resources/js/date.js', 'resources/js/calendar.js', 'resources/js/events.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
     </head>
     <body class="font-poppins antialiased">
