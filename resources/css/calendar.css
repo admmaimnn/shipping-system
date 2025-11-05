@@ -1,0 +1,62 @@
+/* Mengubah tampilan border tabel, membuat kalender terlihat lebih 'rata' */
+.fc {
+    --fc-border-color: #e5e7eb; /* gray-200 */
+    --fc-page-bg-color: transparent;
+    --fc-neutral-bg-color: #f9fafb; /* gray-50 */
+    --fc-event-bg-color: transparent;
+    --fc-event-border-color: transparent;
+    --fc-event-text-color: #1f2937; /* gray-800 */
+}
+
+/* Menghilangkan border grid dan mengatur padding/margin */
+.fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th {
+    border-color: #e5e7eb !important; /* border tipis */
+}
+.fc-daygrid-body {
+    border: none;
+}
+
+/* Mengatur header hari (SUN, MON, TUE,...) */
+.fc-col-header-cell-cushion {
+    padding-top: 1rem !important; /* Contoh: 1.5rem */
+    padding-bottom: 1rem !important;
+    text-transform: uppercase;
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 900; /* font-medium */ /* gray-500 */
+}
+
+/* Mengatur angka tanggal di sudut sel */
+.fc-daygrid-day-number {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    padding: 0.5rem; /* p-2 */
+    margin-top: 0.5rem; /* mt-2 */
+    margin-right: 0.5rem; /* mr-2 */
+}
+
+/* Menyembunyikan tampilan header default FullCalendar karena kita membuat custom header */
+.fc .fc-toolbar-chunk:first-child,
+.fc .fc-toolbar-chunk:last-child {
+    display: none;
+}
+
+/* Gaya untuk event (untuk menyamai tampilan di gambar) */
+.fc-event-title-container {
+    padding: 0.3rem 0.3rem; /* p-2 */
+    margin-left: 1rem;
+}
+
+.fc-event {
+    /* Warna latar belakang dan teks akan diatur di JS */
+    color: white;
+    border-radius: 0.375rem; /* rounded-md */
+    margin-bottom: 0.25rem; /* mb-1 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    white-space: normal;
+}
+
+/* Menyembunyikan border tanggal saat ini (today) */
+.fc-day-today {
+    background-color: transparent !important;
+}
